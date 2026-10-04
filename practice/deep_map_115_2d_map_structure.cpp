@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// ´ÙÁß map¿¡¼­ key°ªÀ» Ã£¾Æ³»±â. ¸Å¿ì Áß¿äÇÑ ÀÛ¾÷. ±â¸»°í»ç¿¡ À¯»çÇÑ ¹®Á¦ ³ª¿È,.
+// 다중 map에서 key값을 찾아내기. 매우 중요한 작업. 기말고사에 유사한 문제 나옴,.
 
 int main() {
 
@@ -19,7 +19,7 @@ int main() {
     w[ 9][-3]= "Quaga" ;
 
     for( auto p : w ) {
-      map<int,string> & inner_map= p.second ; // p´Â ¶Ç ÇÏ³ªÀÇ mapÀÔ´Ï´Ù.
+      map<int,string> & inner_map= p.second ; // p는 또 하나의 map입니다.
       for (auto it2: inner_map ) {
             cout << "\n w[ " <<  p.first << "," << it2.first << " ]= " << it2.second;
       }
